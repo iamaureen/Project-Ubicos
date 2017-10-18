@@ -9,3 +9,10 @@ class htmlParse(APIView):
         parsed_data = parser.html_parse(self,html_data)
         print('from views.py', parsed_data)
         return HttpResponse(parsed_data)
+
+#user web interaction log
+class userLog(APIView):
+    def post(self, request, format = None):
+        log_data = request.data
+        print(log_data)
+        return HttpResponse(log_data)

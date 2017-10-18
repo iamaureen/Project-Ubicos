@@ -1,8 +1,16 @@
 1. git clone https://github.com/iamaureen/Project-Ubicos.git
+
 2.a. Install python 3.6
 link: https://www.python.org/downloads/release/python-360/
+
 2.b. Install django
 link: https://overiq.com/django/1.10/creating-django-project/
+
+2.c. Install rest framework using this
+pip install djangorestframework
+
+2.d. Install pip install django-cors-headers (for this project)
+
 3. open cmd, and go to the folder where "UbicosServer" is 
 4. enter command python manage.py runserver
 <server should start running>
