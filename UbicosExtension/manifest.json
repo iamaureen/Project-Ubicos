@@ -5,18 +5,21 @@
   },
   "description": "Playing around with web extensions",
   "browser_action": {
-    "default_icon": "icon.png"
+
   },
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "downloads",
+    "tabs"
 
  ],
  "content_scripts": [{
-    "matches": ["https://brainly.com/"],
+    "matches": ["https://brainly.com/*"],
     "js": ["jquery.min.js","content.js"]
   }],
-  "name": "Brainly Extension",
+
+  "name": "Ubicos Extension",
   "version": "0.1",
   "manifest_version": 2
 
