@@ -1,0 +1,8 @@
+List of user interaction logged:
+
+1. if user is logged in/logged out
+2. if logged in, get the user name
+3. whether user attempted to search, if user attempted to search, get the content of the searched item
+4. whether user attempted to answer
+5. whether user visited any question, get the ID
+6. logged time, when any page is loaded

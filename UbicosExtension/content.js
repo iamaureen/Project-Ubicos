@@ -1,5 +1,11 @@
+  var username_id
+  var username
+  var userID
+  //data structure for sending to server
   var data = {}
   var array = []
+
+
 $(document).ready(function(){
 
   console.log("page loaded successfully")
@@ -8,13 +14,23 @@ $(document).ready(function(){
   var body_class = $('body').attr('class');
   if(body_class.includes("logged-in")){
     console.log("User is logged in")
+    //since logged in, get user name
+    username_id = $('div.game-box__user-info').find('a').attr('href').split("/")[2]
+    username = username_id.split("-")[0]
+    userID = username_id.split("-")[1]
+    console.log(username)
+
+    data['username'] = username
+
   }else{
     console.log("User is logged out")
   }
-  //data structure to store all user interaction log for one page
+
+  //get the website url
   base_url = document.location.href
   console.log("website url ::", base_url)
   data['url'] = base_url
+
   //if user visits a question page, get the question id
   if(base_url.includes("question")){
     var res = base_url.split("/");
@@ -22,6 +38,15 @@ $(document).ready(function(){
     console.log("question ID :: ",res[4])
     array.push("User viewed question " + res[4])
   }
+
+  //if user searches, get the search content
+  if(base_url.includes("app/ask")){
+    //sample url: https://brainly.com/app/ask?entry=top&q=fraction%20ratio
+    var query = base_url.split("&")[1].split("=")[1].replace("%20", " ")
+    console.log(query)
+    data['queryByUser'] = query
+  }
+
   //detects the time when the page is loaded
   data['time'] = new Date().toLocaleTimeString()
 
@@ -34,6 +59,15 @@ $(document).ready(function(){
     console.log("user attempted search")
 
     });
+
+    //for a specific div class, find its specfic child with class
+    //detects whether user clicks on search textbox -
+    //when user is logged in
+    $('div.sg-header__middle').find('form.sg-search').click(function(){
+      console.log("user attemped to search")
+      array.push("user attempted to search")
+    });
+
 
     //when user is logged in - detect if user wants to ask a question
     //in case of class name with space, put . in the place of space
@@ -51,9 +85,10 @@ $(document).ready(function(){
     //whether user clicked "Add your answer" button
     $('button.sg-button-primary.js-add-answer-button').click(function(){
       console.log("User clicked Add your answer button")
+      array.push("User clicked Add your answer button")
     });
 
-  
+
 
 
  }); //end of window.ready()
