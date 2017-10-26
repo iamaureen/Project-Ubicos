@@ -1,4 +1,5 @@
 from .parser import parser
+from .getAnswer import getAnswerBrainly
 from rest_framework.views import APIView
 from django.http import HttpResponse
 import json
@@ -19,5 +20,13 @@ class userLog(APIView):
         #write to file
         with open('log.txt','a') as f:
             f.write(json.dumps(log_data)+"\n")
-
         return HttpResponse(log_data)
+
+#https://brainly.com/question/5220178
+#get list of answers. html is sent from the browser since, if not logged in,
+#answers are not displayed to the user
+class getAnswer(APIView):
+    def post(self, request, format = None):
+        html_data = request.data
+        answers = getAnswerBrainly.extractAnswer(self, html_data)
+        return HttpResponse(answers)

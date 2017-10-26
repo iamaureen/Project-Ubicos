@@ -7,5 +7,7 @@ parsing is done in parser.py file
 
 3) created url pattern both in server/urls.py and urls.py for this post
 
-4) did this, https://stackoverflow.com/questions/22476273/no-access-control-allow-origin-header-is-present-on-the-requested-resource-i
+4) pip install django-cors-headers
+pip install djangorestframework
+<did this, https://stackoverflow.com/questions/22476273/no-access-control-allow-origin-header-is-present-on-the-requested-resource-i>
 

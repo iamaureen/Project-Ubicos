@@ -37,6 +37,24 @@ $(document).ready(function(){
     data['questionID'] = res[4]
     console.log("question ID :: ",res[4])
     array.push("User viewed question " + res[4])
+
+    //send html to database
+    var question_page_content = JSON.stringify(document.documentElement.innerHTML)
+
+    $.ajax({
+      type: 'POST',
+      contentType: 'application/json',
+      url: 'http://127.0.0.1:8000/getAnswer/',
+      data: question_page_content,
+      success: function (data, textStatus, xhr) {
+                console.log(data);
+        },
+        error: function (xhr, textStatus, errorThrown) {
+                  console.log(xhr);
+        }
+
+    }); //end of ajax call
+
   }
 
   //if user searches, get the search content
@@ -60,7 +78,7 @@ $(document).ready(function(){
 
     });
 
-    //for a specific div class, find its specfic child with class
+    //for a specific div class, find its specfic child with specified class
     //detects whether user clicks on search textbox -
     //when user is logged in
     $('div.sg-header__middle').find('form.sg-search').click(function(){
