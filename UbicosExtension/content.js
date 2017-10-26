@@ -116,6 +116,20 @@ $(document).ready(function(){
 
     });
 
+    //get thanks and corresponding answer value
+    $('button.sg-button-secondary.sg-button-secondary--small.sg-button-secondary--active-inverse.js-thanks-button').click(function(){
+      console.log("thanks button clicked")
+      array.push("thanks button clicked")
+
+    //http://api.jquery.com/parents/
+    //https://stackoverflow.com/questions/1827659/get-a-div-value-in-jquery
+    //get the specific parent class of the button clicked and find the content div
+    //button -> main parent ->child -> data
+    console.log($($(this).parents().find('div.sg-content-box.sg-content-box--spaced-bottom')[0]).children().text())
+
+
+    });
+
 
 
 
