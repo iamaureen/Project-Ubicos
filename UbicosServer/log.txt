@@ -62,3 +62,5 @@
 {"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "9:56:16 PM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
 {"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "9:58:22 PM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
 {"log": {"activity": ["User viewed question 6538225"], "questionID": "6538225", "time": "9:33:16 PM", "url": "https://brainly.com/question/6538225", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538225", "User attempted to answer question 6538225", "User clicked Add your answer button"], "questionID": "6538225", "time": "11:27:30 PM", "url": "https://brainly.com/question/6538225", "user_ans_value": "actual price = paid price + discounted price\ndiscounted price = paid price * 40%\nso, actual price = 34.30 + 34.30*0.4", "username": "ishratahmedmren"}}
+{"log": {"activity": [], "time": "11:31:01 PM", "url": "https://brainly.com/profile/kinseykrauss-7487229"}}

@@ -98,12 +98,22 @@ $(document).ready(function(){
     $('a.js-trigger-add-answer.sg-textarea.sg-textarea--full-width.sg-textarea--tall.sg-textarea--simple').click(function(){
       console.log("User attempted to answer question ", data['questionID'] )
       array.push("User attempted to answer question " + data['questionID'] )
+
+      //get
     });
 
     //whether user clicked "Add your answer" button
     $('button.sg-button-primary.js-add-answer-button').click(function(){
       console.log("User clicked Add your answer button")
       array.push("User clicked Add your answer button")
+
+      //get the content of the posted answer
+      var ans_value = $('textarea[name="content"]').val();
+      console.log(ans_value)
+      alert(ans_value)
+
+      data['user_ans_value'] = ans_value
+
     });
 
 
