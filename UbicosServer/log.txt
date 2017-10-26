@@ -64,3 +64,16 @@
 {"log": {"activity": ["User viewed question 6538225"], "questionID": "6538225", "time": "9:33:16 PM", "url": "https://brainly.com/question/6538225", "username": "ishratahmedmren"}}
 {"log": {"activity": ["User viewed question 6538225", "User attempted to answer question 6538225", "User clicked Add your answer button"], "questionID": "6538225", "time": "11:27:30 PM", "url": "https://brainly.com/question/6538225", "user_ans_value": "actual price = paid price + discounted price\ndiscounted price = paid price * 40%\nso, actual price = 34.30 + 34.30*0.4", "username": "ishratahmedmren"}}
 {"log": {"activity": [], "time": "11:31:01 PM", "url": "https://brainly.com/profile/kinseykrauss-7487229"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "12:52:12 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:05:17 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:06:08 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:11:38 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:11:50 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:12:37 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:12:59 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:14:02 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:19:16 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:25:36 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:31:55 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:33:34 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
+{"log": {"activity": ["User viewed question 6538212"], "questionID": "6538212", "time": "1:37:05 AM", "url": "https://brainly.com/question/6538212", "username": "ishratahmedmren"}}
