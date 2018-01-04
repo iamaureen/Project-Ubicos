@@ -30,3 +30,9 @@ a console will open (this is different from regular browser console)
 
 9. copy the response and paste it in https://jsonlint.com/ to view nicely
 
+-------------------------------------------------------
+Talk to Cozmo:
+
+Dialogue with Cozmo Robot
+Reference: https://github.com/Knuckl3head/clevercozmo
+

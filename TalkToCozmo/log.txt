@@ -1,0 +1,13 @@
+4-1-2018 23:39:30# Conversation started.
+4-1-2018 23:39:35# Human says: I can clean
+4-1-2018 23:39:44# Conversation started.
+4-1-2018 23:39:49# Human says: I can sing
+4-1-2018 23:39:49# Cozmo says: I can sing too
+4-1-2018 23:43:21# Conversation started.
+4-1-2018 23:43:26# Human says: I can sing
+4-1-2018 23:43:26# Cozmo says: I can sing too
+4-1-2018 23:43:31# Human says: bye
+4-1-2018 23:43:31# Cozmo says: I can sing too
+4-1-2018 23:43:39# Human says: hello
+4-1-2018 23:43:39# Cozmo says: I can sing too
+4-1-2018 23:43:48# Conversation ended.
