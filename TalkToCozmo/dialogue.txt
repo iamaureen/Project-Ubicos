@@ -1,0 +1,6 @@
+human,cozmo
+hello, hi back
+bye, bye too
+I do not know how to do it,I will help you
+thank you Cosmo,Welcome friend
+I think I should do it,that's the spirit

@@ -1,6 +1,7 @@
 import cozmo
 import time
 import sys
+import csv
 
 import voiceParse
 
@@ -19,6 +20,7 @@ def initLog():
     #exit the program. Otherwise, we state that the log file is opened.
     try:
         log = open("log.txt", "a")
+
     except:
         print("Error opening log file!")
         sys.exit()
@@ -26,6 +28,8 @@ def initLog():
         print("Log file opened.")
 
     return log
+
+
 
 #Function to add entry to the log file.
 def addEntry(log, entry):
@@ -48,6 +52,10 @@ def addEntry(log, entry):
 
 #The main loop to our program. Runs after all the initialization.
 def mainLoop(robot: cozmo.robot.Robot):
+
+    humanIndex = header.index("human")
+    cozmoIndex = header.index("cozmo")
+
     while True:
         #In a loop, we grab the user input
         print("Listening...")
@@ -63,8 +71,19 @@ def mainLoop(robot: cozmo.robot.Robot):
         addEntry(log, "Human says: " + humanString)
         print("Human says: " + humanString)
 
-        if humanString == "I can sing":
-            cozmoString = "I can sing too"
+        print(csvReader)
+        for row in csvReader:
+            print("inside for loop")
+            human = row[humanIndex]
+            cozmo = row[cozmoIndex]
+            #print("after human says " + human)
+            #print("after human says " + cozmo)
+
+            if humanString == human:
+                print("after matching what human says  " + cozmo)
+                cozmoString = cozmo
+                break
+
 
 
         #Print the response to the screen and add it to the log
@@ -79,7 +98,11 @@ def mainLoop(robot: cozmo.robot.Robot):
 #and print the quit instructions to the user.
 voiceParse.initSpeech()
 log = initLog()
-
+###
+content = open("dialogue.txt", "r")
+csvReader = csv.reader(content)
+header = next(csvReader)
+###
 addEntry(log, "Conversation started.")
 print("######################")
 print("#Type 'quit' to exit.#")
