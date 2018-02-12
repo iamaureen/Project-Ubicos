@@ -11,48 +11,16 @@
 4-1-2018 23:43:39# Human says: hello
 4-1-2018 23:43:39# Cozmo says: I can sing too
 4-1-2018 23:43:48# Conversation ended.
-9-1-2018 18:7:50# Conversation started.
-9-1-2018 18:14:6# Conversation started.
-9-1-2018 18:14:38# Conversation started.
-9-1-2018 18:14:46# Human says: 10 Q Cosmo
-9-1-2018 18:15:45# Conversation started.
-9-1-2018 18:15:49# Human says: hello
-9-1-2018 18:15:49# Cozmo says:  hi back
-9-1-2018 18:15:56# Human says: hello
-9-1-2018 18:15:56# Cozmo says:  hi back
-9-1-2018 18:16:10# Human says: bye
-9-1-2018 18:16:10# Cozmo says:  hi back
-9-1-2018 18:16:23# Human says: bye
-9-1-2018 18:16:23# Cozmo says:  hi back
-9-1-2018 18:16:36# Conversation ended.
-9-1-2018 18:23:59# Conversation started.
-9-1-2018 18:27:33# Conversation started.
-9-1-2018 18:27:37# Human says: bye
-9-1-2018 18:27:37# Cozmo says:  bye too
-9-1-2018 18:27:45# Human says: hello
-9-1-2018 18:27:45# Cozmo says:  bye too
-9-1-2018 18:28:28# Conversation started.
-9-1-2018 18:28:36# Human says: hello
-9-1-2018 18:28:36# Cozmo says:  hi back
-9-1-2018 18:29:3# Human says: bye
-9-1-2018 18:29:3# Cozmo says:  hi back
-9-1-2018 18:29:14# Human says: bye
-9-1-2018 18:29:14# Cozmo says:  hi back
-9-1-2018 18:36:32# Conversation started.
-9-1-2018 18:36:38# Human says: hello
-9-1-2018 18:36:38# Cozmo says:  hi back
-9-1-2018 18:36:46# Human says: bye
-9-1-2018 18:36:46# Cozmo says:  bye too
-9-1-2018 18:37:9# Human says: I do not know how to do it
-9-1-2018 18:37:9# Cozmo says: I will help you
-9-1-2018 18:40:44# Conversation started.
-9-1-2018 18:40:55# Human says: hello
-9-1-2018 18:40:55# Cozmo says:  hi back
-9-1-2018 18:41:6# Human says: bye
-9-1-2018 18:41:6# Cozmo says:  bye too
-9-1-2018 18:41:16# Human says: thank you Cosmo
-9-1-2018 18:41:16# Cozmo says: Welcome friend
-9-1-2018 18:41:28# Human says: I think I should do it
-9-1-2018 18:41:28# Cozmo says: Please go to the next step
-9-1-2018 18:41:55# Human says: I think I should do it
-9-1-2018 18:41:55# Cozmo says: Please go to the next step
+12-2-2018 19:3:55# Conversation started.
+12-2-2018 19:4:4# Human says: so who's the connection right now you're running that Scripts
+12-2-2018 19:50:54# Conversation started.
+12-2-2018 21:45:47# Conversation started.
+12-2-2018 21:46:7# Conversation started.
+12-2-2018 21:46:33# Human says: sorry
+12-2-2018 23:29:26# Conversation started.
+12-2-2018 23:30:14# Conversation started.
+12-2-2018 23:30:43# Human says: hello
+12-2-2018 23:30:43# Cozmo says:  hi ishrat
+12-2-2018 23:30:51# Human says: bye
+12-2-2018 23:30:51# Cozmo says: take care
+12-2-2018 23:31:0# Conversation ended.

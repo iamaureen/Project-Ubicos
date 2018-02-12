@@ -53,6 +53,8 @@ def addEntry(log, entry):
 #The main loop to our program. Runs after all the initialization.
 def mainLoop(robot: cozmo.robot.Robot):
 
+    robot.say_text("Hey John, good job on your homework. Some of your friends still need help on the website, how about logging in there to help them?").wait_for_completed()
+
     humanIndex = header.index("human")
     cozmoIndex = header.index("cozmo")
 
@@ -76,15 +78,11 @@ def mainLoop(robot: cozmo.robot.Robot):
             print("inside for loop")
             human = row[humanIndex]
             cozmo = row[cozmoIndex]
-            #print("after human says " + human)
-            #print("after human says " + cozmo)
 
             if humanString == human:
                 print("after matching what human says  " + cozmo)
                 cozmoString = cozmo
                 break
-
-
 
         #Print the response to the screen and add it to the log
         print("Cozmo says: " + cozmoString)
