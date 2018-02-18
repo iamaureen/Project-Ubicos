@@ -1,6 +1,10 @@
-human,cozmo
-hello, hi ishrat
-bye,take care
-i do not know how to do it,I will help you
-thank you Cosmo,Welcome friend
-i think I should do it,that's the spirit
+human:hello
+cozmo:hi ishrat
+human:bye
+cozmo:take care
+human:i do not know how to do it
+cozmo:I will help you
+human:thank you Cosmo
+cozmo:Welcome friend
+human:i think I should do it
+cozmo:that's the spirit

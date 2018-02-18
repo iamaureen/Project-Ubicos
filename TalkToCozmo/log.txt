@@ -24,3 +24,26 @@
 12-2-2018 23:30:51# Human says: bye
 12-2-2018 23:30:51# Cozmo says: take care
 12-2-2018 23:31:0# Conversation ended.
+13-2-2018 0:27:1# Conversation started.
+13-2-2018 0:28:20# Conversation started.
+13-2-2018 0:28:47# Conversation started.
+13-2-2018 0:29:0# Conversation ended.
+13-2-2018 0:29:4# Conversation started.
+13-2-2018 0:29:31# Conversation ended.
+13-2-2018 0:29:34# Conversation started.
+13-2-2018 0:29:52# Conversation ended.
+13-2-2018 0:29:56# Conversation started.
+13-2-2018 0:30:14# Conversation ended.
+13-2-2018 0:30:18# Conversation started.
+13-2-2018 0:30:50# Conversation ended.
+13-2-2018 0:30:57# Conversation started.
+13-2-2018 0:31:15# Conversation ended.
+13-2-2018 0:31:20# Conversation started.
+13-2-2018 0:31:34# Conversation ended.
+13-2-2018 0:31:50# Conversation started.
+13-2-2018 0:32:7# Conversation ended.
+13-2-2018 0:32:11# Conversation started.
+13-2-2018 0:32:47# Conversation ended.
+13-2-2018 0:32:50# Conversation started.
+13-2-2018 0:33:1# Conversation ended.
+13-2-2018 0:33:7# Conversation started.

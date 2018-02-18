@@ -53,7 +53,7 @@ def addEntry(log, entry):
 #The main loop to our program. Runs after all the initialization.
 def mainLoop(robot: cozmo.robot.Robot):
 
-    robot.say_text("Hey John, good job on your homework. Some of your friends still need help on the website, how about logging in there to help them?").wait_for_completed()
+    #robot.say_text("Hey John, good job on your homework. Some of your friends still need help on the website, how about logging in there to help them?", voice_pitch=-1, duration_scalar=0.0001).wait_for_completed()
 
     humanIndex = header.index("human")
     cozmoIndex = header.index("cozmo")
