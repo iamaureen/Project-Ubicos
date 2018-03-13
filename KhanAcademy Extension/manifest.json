@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "My Cool Extension",
+  "version": "0.1",
+  "background": {
+    "scripts": ["jquery.min.js","background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.khanacademy.org/*"],
+      "js": ["jquery.min.js", "content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": ["tabs", "activeTab"]
+}
