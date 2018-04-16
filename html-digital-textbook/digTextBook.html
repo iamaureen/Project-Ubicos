@@ -15,6 +15,11 @@
   {"name":"dtextbook.github.io","description":null,"author":null,"@type":"WebSite","url":"https://dtextbook.github.io/","image":null,"publisher":null,"headline":"2.1 Constant Velocity","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
   <!-- End Jekyll SEO tag -->
 
+  <!-- edit by ishrat-start -->
+  <script src="gallery.js"></script>
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+  <script src="jquery.min.js"></script>
+  <!-- edit by ishrat-end -->
 
   <link rel="stylesheet" href="/assets/css/style.css?v=0ee9fd672404c56ef48453ee3d1250a6bdf36837">
   <meta name="viewport" content="width=device-width">
@@ -42,6 +47,11 @@
         <li>Now watch the battery operated vehicle run on the floor or table. How could we figure out this toy car’s speed?</li>
         <li>Conduct a class brainstorm and record their ideas at the front of the room. </li>
         <li>Conduct a class brainstorm and upload your picture in the gallery. </li>
+        <li>Take a picture <img width="20px" src="./pics/camera.png" ></li>
+        <form enctype= "multipart/form-data" method = "post" action = "http://127.0.0.1:8000/uploadImage/">
+          <input type='file' id="gallery_img" name="gallery_img"/>
+          <input type = "submit"  value = "submit"/>
+        </form>
         <li>Visit the Gallery. <img width="20px" src="./pics/gallery.png" onclick="showGallery()"></li>
       </ol>
 
@@ -66,6 +76,7 @@
         <script src="/assets/js/scale.fix.js"></script>
 
 
+
       </div>
       <div class="divider"></div>
       <div class="video" id="video1" style="display: none;">
@@ -78,10 +89,10 @@
       <div class="gallery" id="gallery1" style="display: none">
 
         <div id="thumbs">
-          <a href="javascript: changeImage(1);"><img src="./pics/image1.png" alt="" /></a>
-          <a href="javascript: changeImage(2);"><img src="./pics/image2.png" alt="" /></a>
-          <a href="javascript: changeImage(3);"><img src="./pics/image3.png" alt="" /></a>
-          <a href="javascript: changeImage(4);"><img src="./pics/image4.png" alt="" /></a>
+          <a href="javascript: changeImage(1)"><img src="./pics/image1.png" alt="" /></a>
+          <a href="javascript: changeImage(2)"><img src="./pics/image2.png" alt="" /></a>
+          <a href="javascript:changeImage(3)"><img src="./pics/image3.png" alt="" /></a>
+          <a href="javascript: changeImage(4)"><img src="./pics/image4.png" alt="" /></a>
           <a href="javascript: changeImage(5);"><img src="./pics/image5.png" alt="" /></a>
         </div>
 
@@ -108,6 +119,8 @@
           <img src="./pics/bigimage5.png" alt=""/>
         </div>
       </div>
+
+
       <!-- div element for gallery -- end -->
     </body>
     </html>
@@ -124,50 +137,6 @@
       }
     }
 
-    function showGallery(){
-      var display = document.getElementById("gallery1").style.display;
+    function captureImage(){
 
-      if(display == 'none'){
-        document.getElementById("gallery1").style.display = "inline";
-        document.getElementById("bigimages").style.display = "block";
-      }
-      else{
-        document.getElementById("gallery1").style.display = "none";
-        document.getElementById("bigimages").style.display = "none";
-      }
     }
-
-    function changeImage(current) {
-      var imagesNumber = 5;
-
-      for (i=1; i<=imagesNumber; i++) {
-        if (i == current) {
-          document.getElementById("normal" + current).style.display = "block";
-        } else {
-          document.getElementById("normal" + i).style.display = "none";
-        }
-      }
-    }
-    </script>
-
-    <style>
-    .main-content{
-      width: 50%;
-      float: left;
-    }
-    .video{
-      width: 50%;
-      float: left;
-      text-align: center;
-    }
-    .wrapper, html, body{
-      height: 100%;
-    }
-    .divider{
-      position:absolute;
-      left:50%;
-      top:0%;
-      bottom:0%;
-      border-left:3px solid black;
-    }
-    </style>
