@@ -4,6 +4,9 @@ documentation reference:
 https://docs.djangoproject.com/en/2.0/ref/request-response/
 https://docs.djangoproject.com/en/2.0/ref/files/uploads/#django.core.files.uploadedfile.UploadedFile
 
+additional reference:
+http://www.codepool.biz/django-upload-file.html
+
 1. use a form tag to upload an image from the digital textbook
 2. use an ajax request when the submit button is clicked
 3. in the server, create a model that will store the image
@@ -19,3 +22,23 @@ which hits the textbook/urls.py and then app/urls.py. and goes to the correct vi
 Forbidden (403)
 CSRF verification failed. Request aborted.
 solution: Comment out “django.middleware.csrf.CsrfViewMiddleware” in settings.py.
+6. when trying to get data from database from html, following error was issued:
+No 'Access-Control-Allow-Origin' header is present on the requested resource”
+solution:
+a. pip install django-cors-headers
+b. in django settings.py, add the following:
+INSTALLED_APPS = (
+    ...
+    'corsheaders',
+    ...
+)
+
+MIDDLEWARE_CLASSES = (
+    ...
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    ...
+)
+
+CORS_ORIGIN_ALLOW_ALL = True
+source: https://stackoverflow.com/questions/22476273/no-access-control-allow-origin-header-is-present-on-the-requested-resource-i

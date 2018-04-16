@@ -1,5 +1,8 @@
 from django.http import HttpResponse, Http404
+from .models import ImageModel
 import os
+from django.http.response import JsonResponse
+
 
 
 #in the browser: http://127.0.0.1:8000/app/
@@ -10,16 +13,24 @@ def uploadImage(request):
     #get image from html and save it in the database
     if request.method == "POST":
         # print (request.Files) #gives the name of the <input type='file' name...>
-        handle_uploaded_file(request.FILES['gallery_img'], str(request.FILES['gallery_img']))
-        return HttpResponse('Success')
+
+        img = ImageModel(image=request.FILES['gallery_img'])
+        img.save()
+
+        #uploads in the server but not in the db
+        #handle_uploaded_file(request.FILES['gallery_img'], str(request.FILES['gallery_img']))
+        return HttpResponse('success')
 
 
 def handle_uploaded_file(file, filename):
-    if not os.path.exists('upload/'):
-        os.mkdir('upload/')
+    if not os.path.exists('media/'):
+        os.mkdir('media/')
 
-    with open('upload/' + filename, 'wb+') as destination:
+    with open('media/' + filename, 'wb+') as destination:
         for chunk in file.chunks():
             destination.write(chunk)
 
 
+def getImage(request):
+    image = ImageModel.get.all();
+    return JsonResponse({'success': image, 'errorMsg': True})
