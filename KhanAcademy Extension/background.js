@@ -18,3 +18,13 @@ chrome.runtime.onMessage.addListener(
     }
   }
 );
+
+
+//fire when an internal link is clicked. only url is changed, page not completely reloaded
+chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
+  //https://developer.chrome.com/extensions/webNavigation
+  console.log('reason for page navigation:', details.transitionType) //check background console
+  //execute content script at page url change else content script is injected only the first time
+  chrome.tabs.executeScript(null, {file:"content.js"});
+  
+});
