@@ -90,8 +90,8 @@ console.log("page url :: ", document.location.href)
       $.ajax({
 
          type: 'POST',
-         url: 'http://127.0.0.1:8000/extensionlog/', //this works
-         //url: 'https://hcilabasu.pythonanywhere.com/extensionlog/',
+         //url: 'http://127.0.0.1:8000/extensionlog/', //this works
+         url: 'https://hcilabasu.pythonanywhere.com/extensionlog/',
          data: JSON.stringify({
                  'username':username,
                  'action': action,
